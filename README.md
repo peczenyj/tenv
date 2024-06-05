@@ -39,7 +39,7 @@ func helper() {
 ```
 
 ```console
-go vet -vettool=(which tenv) ./...
+go vet -vettool=$(which tenv) ./...
 
 # a
 ./main_test.go:11:2: os.Setenv() can be replaced by `t.Setenv()` in TestMain
@@ -75,7 +75,7 @@ func helper() {
 ```
 
 ```console
-go vet -vettool=(which tenv) -tenv.all ./...
+go vet -vettool=$(which tenv) -tenv.all ./...
 
 # a
 ./main_test.go:11:2: os.Setenv() can be replaced by `t.Setenv()` in TestMain
